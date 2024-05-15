@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsara information</title>
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <button>&equiv;</button>
+        <div class="dropdown-content">
+            <a href="#About Samsara" style="color: black;">About Samsara</a>
+            <a href="#Mission Statement" style="color: black;">Mission Statement</a>
+            <a href="#Our Commitment" style="color: black;">Our Commitment</a>
+            <a href="#Sign up" style="color: black;">Sign Up Today!</a>
+        </div>
+    </div>
+
+    <ul class="grid-container">
+        <li><a href="#About Samsara">About Samsara</a></li>
+        <li><a href="#Mission Statement">Mission Statement</a></li>
+        <li><a href="#Our Commitment">Our Commitment</a></li>
+        <li><a href="#Sign up">Sign Up Today!</a></li>
+    </ul>
+
+    <header>
+        <div>
+            <h1>Samsara</h1>
+            <p>A Helldivers 2 Roleplay Group</p>
+        </div>
+
+        <img class="Samsara spin" src="Images/Samsara.jpg" alt="Samsara PMC">
+    </header>
+
+    <div>
+        <h3 id="About Samsara">About Samsara</h3>
+        <p>
+            Welcome to Samsara, where resilience meets altruism in the heart of the chaos. As a premier Private Military Company (PMC), we transcend the conventional labels, akin to an Emergency Medical Service (EMS) of the battlefield. Embracing the spirit of camaraderie and sacrifice, we stand as guardians against the relentless tides of conflict within the world of Helldivers 2.
+        </p>
+    </div>
+
+    <div>
+        <h3 id="Mission Statement">Mission Statement:</h3>
+        <p>
+            Samsara is more than a PMC; it's a beacon of hope amidst the turmoil. Our unwavering dedication is simple yet profound: to extend a hand to those in need, regardless of the cost. Symbolized by the eternal ouroboros, we epitomize resilience and renewal. In the face of adversity, we rise again and again, ensuring that no ally is left behind.
+        </p>
+    </div>
+
+    <div>
+        <h3 id="Our Commitment">Our Commitment:</h3>
+        <p>
+            We are pioneers of cutting-edge cloning technology, safeguarding the essence of our members as they navigate the perilous frontlines. Within Samsara, there is no loss without restoration, no sacrifice without redemption. Our alliance extends beyond our ranks, collaborating seamlessly with esteemed divisions like the 66th Armored Division. Whether you seek guidance, support, or sanctuary, know that Samsara stands ready, unwavering in our resolve to aid and uplift all who call upon us.
+        </p>
+    </div>
+
+    <div class="centered">
+        <br>
+        <hr style="border-color: white;">
+
+        Join us in the eternal cycle, where every dawn brings renewed purpose and every dusk heralds the triumph of unity. Together, we shall overcome. Together, we are Samsara.
+        <br> <br>
+        Heroes always get remembered, but legends never die.
+
+        <br>
+        <hr style="border-color: white;">
+        <br>
+    </div>
+
+    <table>
+        <h1> Join Our Elites!</h1>
+        Elite members are rewarded for their participation. Each member can rise through the ranks. Our top members have been active in Samsara since its beginning.
+        A merit system is under development to track each member successful missions.
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Merit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-th="Name">Mint</td>
+                <td data-th="Role">CEO</td>
+                <td data-th="Merit">Untracked</td>
+            </tr>
+            <tr>
+                <td data-th="Name">Hoovy</td>
+                <td data-th="Role">Commanding officer</td>
+                <td data-th="Merit">Untracked</td>
+            </tr>
+            <tr>
+                <td data-th="Name">Rolex</td>
+                <td data-th="Role">Emisarry</td>
+                <td data-th="Merit">Untracked</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="Sign up" class="centered">
+
+        <form>
+
+            <p>
+                <label>What is your ingame level?</label><br>
+                <input type="level" name="level" required="">
+            </p>
+
+            <p>
+                <label>What is your discord username?</label><br>
+                <input type="username" name="username" required="">
+            </p>
+
+            <p>
+                <label>Why do you want to join Samsara?</label><br>
+                <textarea></textarea>
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox" value="terms" required="">
+                    I agree to <a href="Policy.html">  Samsara's company policy </a>
+                </label>
+            </p>
+
+            <p>
+                <button>Sign up</button>
+                <button type="reset">Reset form</button>
+            </p>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="popup icon-discord" onclick="discord()">
+            <span class="popuptext" id="myPopup">For more information, contact @verdephox or @h00vy</a></span>
+        </div>
+
+        <a class="icon-youtube2" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="color: white; text-decoration: none;"></a>
+    </footer>
+
+</body>
+
+<script>
+
+    function discord() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+
+    function Policy() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+
+    function reveal(elementId) {
+        var x = document.getElementById(elementId);
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            x.classList.add("fade-in");
+            x.classList.remove("fade-out");
+        }
+        
+        else {
+            x.classList.add("fade-out");
+            x.classList.remove("fade-in");
+            setTimeout(function() {
+                if (x.classList.contains("fade-out")) {
+                    x.style.display = "none";
+                }
+            }, 2000);
+        }
+    }
+
+
+</script>
+
+</html>
